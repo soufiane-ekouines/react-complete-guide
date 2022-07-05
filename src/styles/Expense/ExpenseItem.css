@@ -1,0 +1,31 @@
+body {
+    background-color: #1c1a1a;
+}
+.expenseitem{
+    background-color: #4e4b4b;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+}
+.expenseitem div {
+    font-size: 14px;
+}
+.expenseitem_desciption{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+.expenseitem_desciption h2{
+    color: white;
+}
+.expenseitem_price{
+    background-color: #4f0cdf;
+    padding: 17px 43px;
+    border-radius: 16px;
+    font-size: 21px;
+    color: white;
+    font-weight: bold;
+    border: 2px white solid;
+}

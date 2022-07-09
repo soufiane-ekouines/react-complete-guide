@@ -11,14 +11,16 @@ const ExpenseItem = (props) => {
         settitle('hello wii');
     }
     return (
+        <li>
         <Cart className='expenseitem'>
             <ExpenseDate date={props.item.date} />
             <div className='expenseitem_desciption'>
                 <h2>{title}</h2>
                 <div className='expenseitem_price'>$ {props.item.amount}</div>
-                <button onClick={clickHandler}>Change the title</button>
+                {/* <button onClick={clickHandler}>Change the title</button> */}
             </div>
         </Cart>
+        </li>
     );
 };
 

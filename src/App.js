@@ -1,6 +1,6 @@
-import React,{ useState } from "react";
+import React, { useState } from "react";
+import ExpenseChart from "./components/Expense/ExpenseChart";
 import Expenses from "./components/Expense/Expenses";
-import ExpensesFilter from "./components/Expense/ExpensesFilter";
 import Newexpense from "./components/Newexpense/Newexpense";
 
 const data_expens = [
@@ -37,6 +37,7 @@ function App() {
     });
     console.log(expenses);
   }
+
 
   return (
     <div>

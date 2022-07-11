@@ -14,7 +14,7 @@ const Expenseform = ( props ) => {
         event.preventDefault();
         const extendata={
             title:TextInput.title,
-            amount:TextInput.amount,
+            amount:+TextInput.amount,
             date: new Date(TextInput.date)
         }
         props.onSaveExpenseData(extendata);
@@ -23,6 +23,10 @@ const Expenseform = ( props ) => {
            amount:'',
            date:''
         })
+    }
+    const Anuller = () =>
+    {
+        props.OnAnuller();
     }
     return (
         <form onSubmit={submitHandler}>
@@ -42,6 +46,7 @@ const Expenseform = ( props ) => {
             </div>
             <div className='new-expense__actions'>
                 <button type="submit">Add expense </button>
+                <button type="button" onClick={Anuller}>Anuller </button>
             </div>
         </form>
     );
